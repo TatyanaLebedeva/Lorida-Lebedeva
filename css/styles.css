@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    background-color: #004C93;
+    justify-content: space-between;
+    width: 1440px;
+    height: 100px;
+}
+.header__section {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin: 38px 165px 0px;
+    border: 1px #000000;
+    font-size: 24px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px #000000;
+    font-family: Arial;
+    font-weight: bold;
+    }
+
+.container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 200px 165px 0px;
+    font-size: 36px;
+    color: #004C93;
+    font-family: Calibri;
+    
+
+}
