@@ -235,6 +235,36 @@ h3 {
 
     .card {
         max-width: 565px;
+    }
+    .about_me {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        height: 1000px;
+    }
+    .block {
+        width: 565px;
+        height: 150px;
+    }
 
+    .card__number {
+        color: #004C93;
+        margin: 0;
+        font-family: Roboto, serif;
+        font-size: 120px;
+    }
+
+    .card__sign {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 10px;
+           }
+    .card__indent{
+        margin-top: 30px;
+    }
+    .ladder {
+        display: flex;
+        align-self: flex-start;
     }
 }
