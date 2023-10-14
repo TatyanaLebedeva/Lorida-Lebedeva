@@ -8,3 +8,6 @@ let menuActive = document.querySelector('.menu__section');
 menuActive.addEventListener('click', function() {
     menu.classList.toggle('active');
 })
+// window.addEventListener('scroll', function() {
+//     menu.classList.toggle('active');
+// })

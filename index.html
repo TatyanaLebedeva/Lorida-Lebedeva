@@ -18,11 +18,11 @@
                 </div>
                 <ul class="menu">
                     <li><a class="menu__section" href="#about-me">Обо мне</a></li>
-                    <li><a href="#">Моя деятельность</a></li>
-                    <li><a href="#">Калькулятор</a></li>
-                    <li><a href="#">Сложности</a></li>
-                    <li><a href="#">Настроение</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#activity">Моя деятельность</a></li>
+                    <li><a href="#calc">Калькулятор</a></li>
+                    <li><a href="#problem">Сложности</a></li>
+                    <li><a href="#mood">Настроение</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -36,51 +36,63 @@
             </div>
             <img class="photo" src="css/img/photo.jpg"  alt=""/>
         </div>
-<!--        <div class="my_d">-->
-<!--            <h3>Моя деятельность</h3>-->
-<!--            <ol class="about_me">-->
-<!--                <li>Работаю ведущим инженером-конструктором</li>-->
-<!--                <li>Занимаюсь танцами</li>-->
-<!--                <li>Играю в волейбол</li>-->
-<!--                <li>Провожу культурно-массовые мероприятия</li>-->
-<!--                <li>Изучаю английский язык</li>-->
-<!--            </ol>-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <h3>Калькулятор</h3>-->
-<!--            <div class="calc"><p>Введите первое число</p>-->
-<!--            <input type="text"-->
-<!--                   minlength="4"-->
-<!--                   maxlength="8"-->
-<!--                   size="10">-->
-<!--            <p>Выберите операцию</p>-->
-<!--            <select>-->
-<!--                <option>Умножить</option>-->
-<!--                <option>Разделить</option>-->
-<!--                <option>Сложить</option>-->
-<!--                <option>Вычесть</option>-->
-<!--            </select>-->
-<!--            <p>Введите второе число</p>-->
-<!--            <input type="text">-->
-<!--            <button>Вычислить</button>-->
-<!--        </div>-->
-<!--        <div class="my_d">-->
-<!--            <h3>Сложности</h3>-->
-<!--            <ol class="Numb2">-->
-<!--                <li>Нахождение шрифта</li>-->
-<!--                <li>Не получалось подключить картинку</li>-->
-<!--                <li>Не получался переход по ссылке</li>-->
-<!--                <li>Не работают цвета</li>-->
-<!--                <li>Не получался переход по ссылке</li>-->
-<!--            </ol>-->
-<!--        </div>-->
-<!--        <div>-->
-
-<!--            <h3>Настроение</h3>-->
-<!--            <img class="photo" src="css/img/mood.jpg" width="200" height="262" alt=""/>-->
-<!--        </div>-->
+        <div class="activity">
+            <div id="activity" class="board">
+                <h3 class="card">Моя деятельность</h3>
+            </div>
+            <ol class="about_me">
+                <li class="block"><p class="card__number">1</p> Работаю ведущим инженером-конструктором</li>
+                <li class="block ladder"><p class="card__number">2</p>Занимаюсь танцами</li>
+                <li class="block"><p class="card__number">3</p>Играю в волейбол</li>
+                <li class="block ladder"><p class="card__number">4</p>Провожу культурно-массовые мероприятия</li>
+                <li class="block"><p class="card__number">5</p>Изучаю английский язык</li>
+            </ol>
+        </div>
+        <div id="calc" class="board">
+            <div class="card">
+                <h3>Калькулятор</h3>
+                <div class="calc">
+                    <label>
+                        <p>Введите первое число</p>
+                        <input type="text" class="input">
+                    </label>
+                    <label>
+                        <p>Выберите операцию</p>
+                        <select class="input">
+                            <option>Умножить</option>
+                            <option>Разделить</option>
+                            <option>Сложить</option>
+                            <option>Вычесть</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p>Введите второе число</p>
+                        <input type="text" class="input">
+                    </label>
+                </div>
+                <a href="" class="calc__button" role="button">Вычислить</a>
+            </div>
+        </div>
+        <div class="activity">
+            <div id="problem" class="board">
+                <h3 class="card">Сложности</h3>
+            </div>
+            <ol class="about_me">
+                <li class="block"><p class="card__sign">?</p> Нахождение шрифта</li>
+                <li class="block ladder"><p class="card__sign">?</p>Не получалось подключить картинку</li>
+                <li class="block"><p class="card__sign">?</p>Не получался переход по ссылке</li>
+                <li class="block ladder"><p class="card__sign">?</p>Не работают цвета</li>
+                <li class="block"><p class="card__sign">?</p>Не получался переход по ссылке</li>
+            </ol>
+        </div>
+        <div id="mood" class="board">
+            <h3 class="card">Настроение</h3>
+        </div>
+        <div class="center">
+            <img class="photo" src="css/img/mood.jpg" alt=""/>
+        </div>
     </main>
-    <footer class="container">
+    <footer id='contact' class="container">
         <div class="bar">
             <span class="bar__section"> Татьяна Лебедева</span>
             <a href="https://vk.com/id18619383" role="button">

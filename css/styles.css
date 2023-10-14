@@ -61,6 +61,8 @@ a {
 .card {
     padding: 50px 30px;
     min-width: 565px;
+    font-family: Inter, serif;
+    font-size: 36px;
 }
 
 .photo {
@@ -69,36 +71,91 @@ a {
     min-height: 630px;
 }
 
-/*.calc {*/
-/*    color: #000;*/
-/*    font-family: Roboto;*/
-/*    font-size: 14px;*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    line-height: 160%; !* 22.4px *!*/
-/*}*/
+.calc {
+    color: #000;
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
 
 .board {
     display: flex;
-    flex-wrap: nowrap;
     margin: 0 auto;
     max-width: 1250px;
 }
 
-/*.my_d {*/
-/*    background: #F3FBFF;*/
-/*    padding: 50px 0;;*/
-/*}*/
+.input {
+    width: 555px;
+    height: 32px;
+    flex-shrink: 0;
+}
 
-/*.about_me {*/
-/*    display: flex;*/
-/*    flex-wrap: nowrap;*/
-/*    !*justify-content: center;*!*/
-/*    padding: 0;*/
-/*    margin: 0 auto;*/
-/*    max-width: 1250px;*/
+.calc__button {
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 6px;
+    background: #004C93;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+}
 
-/*}*/
+.calc__button:hover {
+    background-color: #40A3FF;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.activity {
+    background: #F3FBFF;
+}
+
+.about_me {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1250px;
+    height: 500px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 15px;
+    width: 200px;
+    height: 290px;
+    border: solid 1px #004C93;
+    color: #2E4674;
+    font-family: Roboto, serif;
+    font-size: 16px;
+}
+
+.card__number {
+    color: #004C93;
+    margin: 0;
+    font-family: Roboto, serif;
+    font-size: 120px;
+}
+
+.card__sign {
+    color: #004C93;
+    margin: 0 auto;
+    font-family: Roboto, serif;
+    font-size: 120px;
+    font-weight: bolder;
+}
+
+.ladder {
+    display: flex;
+    align-self: flex-end;
+}
 
 h3 {
     margin-block-start: 0;
