@@ -197,8 +197,8 @@ h3 {
     .menu li {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
+        align-items: flex-end;
+        padding: 10px 200px;
         list-style-type: none;
     }
 
