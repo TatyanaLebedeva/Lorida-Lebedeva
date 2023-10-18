@@ -1,7 +1,5 @@
 body {
     margin: 0;
-    flex-direction: column;
-    display: flex;
 }
 
 .bar {
@@ -23,7 +21,7 @@ body {
     line-height: normal;
 }
 
-a {
+.topic {
     color: #FFFFFF;
     font-size: 16px;
     font-family: Inter, sans-serif;
@@ -43,7 +41,7 @@ a {
     padding-left: 15px;
 }
 
-.container {
+.case {
     display: flex;
     height: 100px;
     background-color: #004C93;
@@ -58,7 +56,7 @@ a {
     line-height: normal;
 }
 
-.card {
+.postcard {
     padding: 50px 30px;
     min-width: 565px;
     font-family: Inter, serif;
@@ -80,7 +78,7 @@ a {
     line-height: 160%;
 }
 
-.board {
+.clapboard {
     display: flex;
     margin: 0 auto;
     max-width: 1250px;
@@ -116,7 +114,7 @@ a {
     background: #F3FBFF;
 }
 
-.about_me {
+.fact {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -124,7 +122,7 @@ a {
     height: 500px;
 }
 
-.block {
+.unit {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -137,14 +135,18 @@ a {
     font-size: 16px;
 }
 
-.card__number {
+.postcard__number {
     color: #004C93;
     margin: 0;
     font-family: Roboto, serif;
     font-size: 120px;
 }
 
-.card__sign {
+.postcard__indent {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.postcard__sign {
     color: #004C93;
     margin: 0 auto;
     font-family: Roboto, serif;
@@ -228,41 +230,38 @@ h3 {
         top: calc(50% + 10px);
     }
 
-    .board {
+    .clapboard {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .card {
+    .postcard {
         max-width: 565px;
     }
-    .about_me {
+
+    .fact {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         height: 1000px;
     }
-    .block {
+
+    .unit {
         width: 565px;
         height: 150px;
     }
 
-    .card__number {
-        color: #004C93;
-        margin: 0;
-        font-family: Roboto, serif;
-        font-size: 120px;
-    }
-
-    .card__sign {
+    .postcard__sign {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         margin: 10px;
-           }
-    .card__indent{
+    }
+
+    .postcard__indent {
         margin-top: 30px;
     }
+
     .ladder {
         display: flex;
         align-self: flex-start;

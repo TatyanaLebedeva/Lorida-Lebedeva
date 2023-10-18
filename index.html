@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Моя страница</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <header class="container">
+    <header class="case">
         <div class="bar">
-            <span class="bar__section">Татьяна Лебедева</span>
+<!--            <span class="bar__section">Татьяна Лебедева</span>-->
+            <span class="text-white text-xl not-Italic font-bold underline-offset-1 stroke-black leading-normal ">Татьяна Лебедева</span>
             <div>
                 <div class="burger__btn" role="button">
                     <span></span>
@@ -17,19 +19,19 @@
                     <span></span>
                 </div>
                 <ul class="menu">
-                    <li><a class="menu__section" href="#about-me">Обо мне</a></li>
-                    <li><a href="#activity">Моя деятельность</a></li>
-                    <li><a href="#calc">Калькулятор</a></li>
-                    <li><a href="#problem">Сложности</a></li>
-                    <li><a href="#mood">Настроение</a></li>
-                    <li><a href="#contact">Контакты</a></li>
+                    <li><a class="topic menu__section" href="#about-me">Обо мне</a></li>
+                    <li><a class="topic" href="#activity">Моя деятельность</a></li>
+                    <li><a class="topic" href="#calc">Калькулятор</a></li>
+                    <li><a class="topic" href="#problem">Сложности</a></li>
+                    <li><a class="topic" href="#mood">Настроение</a></li>
+                    <li><a class="topic" href="#contact">Контакты</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <main class=>
-        <div id="about-me" class="board">
-            <div class="card">
+        <div id="about-me" class="clapboard">
+            <div class="postcard">
                 <h3>Меня зовут Татьяна!</h3>
                 <p class="info">Хочу обучиться программированию!</p>
                 <p class="info">Люблю заниматься танцами, играть в волейбол и путешествовать!</p>
@@ -37,19 +39,19 @@
             <img class="photo" src="css/img/photo.jpg"  alt=""/>
         </div>
         <div class="activity">
-            <div id="activity" class="board">
-                <h3 class="card">Моя деятельность</h3>
+            <div id="activity" class="clapboard">
+                <h3 class="postcard">Моя деятельность</h3>
             </div>
-            <ol class="about_me">
-                <li class="block"><p class="card__number">1</p><p class='card__indent'>Работаю ведущим инженером-конструктором</p></li>
-                <li class="block ladder"><p class="card__number">2</p><p class='card__indent'>Занимаюсь танцами</p></li>
-                <li class="block"><p class="card__number">3</p><p class='card__indent'>Играю в волейбол</p></li>
-                <li class="block ladder"><p class="card__number">4</p><p class='card__indent'>Провожу культурно-массовые мероприятия</p></li>
-                <li class="block"><p class="card__number">5</p><p class='card__indent'>Изучаю английский язык</p></li>
+            <ol class="fact">
+                <li class="unit"><p class="postcard__number">1</p><p class='postcard__indent'>Работаю ведущим инженером-конструктором</p></li>
+                <li class="unit ladder"><p class="postcard__number">2</p><p class='postcard__indent'>Занимаюсь танцами</p></li>
+                <li class="unit"><p class="postcard__number">3</p><p class='postcard__indent'>Играю в волейбол</p></li>
+                <li class="unit ladder"><p class="postcard__number">4</p><p class='postcard__indent'>Провожу культурно-массовые мероприятия</p></li>
+                <li class="unit"><p class="postcard__number">5</p><p class='postcard__indent'>Изучаю английский язык</p></li>
             </ol>
         </div>
-        <div id="calc" class="board">
-            <div class="card">
+        <div id="calc" class="clapboard">
+            <div class="postcard">
                 <h3>Калькулятор</h3>
                 <div class="calc">
                     <label>
@@ -74,25 +76,25 @@
             </div>
         </div>
         <div class="activity">
-            <div id="problem" class="board">
-                <h3 class="card">Сложности</h3>
+            <div id="problem" class="clapboard">
+                <h3 class="postcard">Сложности</h3>
             </div>
-            <ol class="about_me">
-                <li class="block"><p class="card__sign">?</p><p class='card__indent'>Нахождение шрифта</p></li>
-                <li class="block ladder"><p class="card__sign">?</p><p class='card__indent'>Не получалось подключить картинку</p></li>
-                <li class="block"><p class="card__sign">?</p><p class='card__indent'>Не получался переход по ссылке</p></li>
-                <li class="block ladder"><p class="card__sign">?</p><p class='card__indent'>Не работают цвета</p></li>
-                <li class="block"><p class="card__sign">?</p><p class='card__indent'>Не получался переход по ссылке</p></li>
+            <ol class="fact">
+                <li class="unit"><p class="postcard__sign">?</p><p class='postcard__indent'>Нахождение шрифта</p></li>
+                <li class="unit ladder"><p class="postcard__sign">?</p><p class='postcard__indent'>Не получалось подключить картинку</p></li>
+                <li class="unit"><p class="postcard__sign">?</p><p class='postcard__indent'>Не получался переход по ссылке</p></li>
+                <li class="unit ladder"><p class="postcard__sign">?</p><p class='postcard__indent'>Не работают цвета</p></li>
+                <li class="unit"><p class="postcard__sign">?</p><p class='postcard__indent'>Не получался переход по ссылке</p></li>
             </ol>
         </div>
-        <div id="mood" class="board">
-            <h3 class="card">Настроение</h3>
+        <div id="mood" class="clapboard">
+            <h3 class="postcard">Настроение</h3>
         </div>
         <div class="center">
             <img class="photo" src="css/img/mood.jpg" alt=""/>
         </div>
     </main>
-    <footer id='contact' class="container">
+    <footer id='contact' class="case">
         <div class="bar">
             <span class="bar__section"> Татьяна Лебедева</span>
             <a href="https://vk.com/id18619383" role="button">
