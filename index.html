@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <header class="case">
-        <div class="flex justify-between flex-row  min-w-full	m-0	px-10 bg-sky-800	bar">
+    <header class="flex h-24 bg-sky-800">
+        <div class="flex justify-between flex-row min-w-full m-0 px-10 bg-sky-800 bar">
             <span class="text-white text-xl not-Italic font-bold underline-offset-1 stroke-black leading-normal ">Татьяна Лебедева</span>
             <div>
                 <div class="burger__btn" role="button">
@@ -17,9 +17,9 @@
                     <span></span>
                     <span></span>
                 </div>
-                <ul class="menu">
-                    <li><a class=" underline decoration-white text-white text-l not-Italic	" href="#about-me">Обо мне</a></li>
-                    <li><a class="	text-white text-l not-Italic 	" href="#activity">Моя деятельность</a></li>
+                <ul class="inline-flex ml-1 pl-3.5 tracking-normal indent-2.5">
+                    <li><a class="underline decoration-white text-white text-l not-Italic" href="#about-me">Обо мне</a></li>
+                    <li><a class="text-white text-l not-Italic" href="#activity">Моя деятельность</a></li>
                     <li><a class="text-white text-l not-Italic" href="#calc">Калькулятор</a></li>
                     <li><a class="text-white text-l not-Italic" href="#problem">Сложности</a></li>
                     <li><a class="text-white text-l not-Italic" href="#mood">Настроение</a></li>
@@ -29,73 +29,93 @@
         </div>
     </header>
     <main class= "">
-        <div id="about-me" class="clapboard">
-            <div class="px-30 py-45 text-sky-700 text-4xl not-italic mt-10	">
+        <div id="about-me" class="flex justify-between m-0 max-w-screen-l">
+            <div class="px-40 py-45 text-sky-700 text-4xl not-italic mt-10	">
                 <h3>Меня зовут Татьяна!</h3>
                 <p class="px-1 py-5 text-sky-700 text-2xl italic leading-5	font-bold">Хочу обучиться программированию!</p>
                 <p class="px-1 py-5 text-sky-700 text-2xl italic leading-5	font-bold 			">Люблю заниматься танцами, играть в волейбол и путешествовать!</p>
             </div>
-            <img class="photo" src="css/img/photo.jpg"  alt=""/>
+            <img class="rounded-md min-w-min px-1 py-9" src="css/img/photo.jpg" alt=""/>
         </div>
-        <div class="activity">
-            <div id="activity" class="clapboard">
-                <h3 class="postcard">Моя деятельность</h3>
+        <div class="bg-sky-100">
+            <div id="activity" class="px-30 py-45 text-sky-700 text-4xl not-italic mt-10">
+                <h3 class="px-40 py-45 text-sky-700 text-4xl not-italic mt-10 font-bold font-serif">Моя деятельность</h3>
             </div>
-            <ol class="fact">
-                <li class="unit"><p class="postcard__number">1</p><p class='postcard__indent'>Работаю ведущим инженером-конструктором</p></li>
-                <li class="unit ladder"><p class="postcard__number">2</p><p class='postcard__indent'>Занимаюсь танцами</p></li>
-                <li class="unit"><p class="postcard__number">3</p><p class='postcard__indent'>Играю в волейбол</p></li>
-                <li class="unit ladder"><p class="postcard__number">4</p><p class='postcard__indent'>Провожу культурно-массовые мероприятия</p></li>
-                <li class="unit"><p class="postcard__number">5</p><p class='postcard__indent'>Изучаю английский язык</p></li>
+            <ol class="flex justify-center px-2.5 py-3.5 m-0 max-w-screen-l" style="height: 500px">
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5">
+                    <p class="text-9xl	 m-0 font-sans text-sky-700">1</p>
+                    <p class=' mt-0 inline-block align-text-bottom'>Работаю ведущим инженером-конструктором</p></li>
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5 self-end">
+                    <p class="text-9xl m-0 font-sans text-sky-700">2</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Занимаюсь танцами</p></li>
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5">
+                    <p class="text-9xl m-0 font-sans text-sky-700">3</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Играю в волейбол</p></li>
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5 self-end">
+                    <p class="text-9xl m-0 font-sans text-sky-700">4</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Провожу культурно-массовые мероприятия</p></li>
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5">
+                    <p class="text-9xl m-0 font-sans text-sky-700">5</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Изучаю английский язык</p></li>
             </ol>
         </div>
-        <div id="calc" class="clapboard">
-            <div class="postcard">
+        <div id="calc" class="px-30 py-45 text-sky-700 text-4xl not-italic mt-10">
+            <div class="px-40 py-45 text-sky-700 text-4xl not-italic mt-10 font-bold font-serif">
                 <h3>Калькулятор</h3>
-                <div class="calc">
-                    <label>
+                <div class="text-sky-700 text-xl font-sans">
+                    <label for="number1">
                         <p>Введите первое число</p>
-                        <input type="text" class="input">
+                        <input type="number" id="number1" class="border-solid border-2 border-sky-500 h-8 w-[555px] mb-3 mt-3">
                     </label>
-                    <label>
+                    <label for="operation">
                         <p>Выберите операцию</p>
-                        <select class="input">
-                            <option>Умножить</option>
-                            <option>Разделить</option>
-                            <option>Сложить</option>
-                            <option>Вычесть</option>
+                        <select id="operation" class="border-solid border-2 border-sky-500 h-8 w-[555px] mb-3 mt-3">
+                            <option value="multiplication">Умножить</option>
+                            <option value="division">Разделить</option>
+                            <option value="addition">Сложить</option>
+                            <option value="subtraction">Вычесть</option>
                         </select>
                     </label>
-                    <label>
+                    <label for="number2">
                         <p>Введите второе число</p>
-                        <input type="text" class="input">
+                        <input type="number" id="number2" class="border-solid border-2 border-sky-500 h-8 w-[555px] mb-3 mt-3">
                     </label>
                 </div>
-                <a href="" class="calc__button" role="button">Вычислить</a>
+                <button onclick="calculate()" class="h-10 w-80 mb-3 mt-3 text-2xl text-white bg-sky-800">Вычислить</button>
             </div>
         </div>
-        <div class="activity">
-            <div id="problem" class="clapboard">
-                <h3 class="postcard">Сложности</h3>
+        <div class="bg-sky-100	">
+            <div id="problem" class="px-30 py-45 text-sky-700 text-4xl not-italic mt-10">
+                <h3 class="px-40 py-45 text-sky-700 text-4xl not-italic mt-10 font-bold font-serif">Сложности</h3>
             </div>
-            <ol class="fact">
-                <li class="unit"><p class="postcard__sign">?</p><p class='postcard__indent'>Нахождение шрифта</p></li>
-                <li class="unit ladder"><p class="postcard__sign">?</p><p class='postcard__indent'>Не получалось подключить картинку</p></li>
-                <li class="unit"><p class="postcard__sign">?</p><p class='postcard__indent'>Не получался переход по ссылке</p></li>
-                <li class="unit ladder"><p class="postcard__sign">?</p><p class='postcard__indent'>Не работают цвета</p></li>
-                <li class="unit"><p class="postcard__sign">?</p><p class='postcard__indent'>Не получался переход по ссылке</p></li>
+            <ol class="flex justify-center px-2.5 py-3.5 m-0 max-w-screen-l" style="height: 500px">
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5">
+                    <p class="text-9xl m-0 font-sans text-sky-700">?</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Нахождение шрифта</p></li>
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5 self-end">
+                    <p class="text-9xl m-0 font-sans text-sky-700">?</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Не получалось подключить картинку</p></li>
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5">
+                    <p class="text-9xl m-0 font-sans text-sky-700">?</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Не получался переход по ссылке</p></li>
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5 self-end">
+                    <p class="text-9xl m-0 font-sans text-sky-700">?</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Не работают цвета</p></li>
+                <li class="flex flex-wrap px-2.5 py-3.5 h-72 w-48 border-solid border-2 border-sky-500 font-sans text-sky-700 mx-1.5">
+                    <p class="text-9xl m-0 font-sans text-sky-700">?</p>
+                    <p class='mt-0 inline-block align-text-bottom'>Не получался переход по ссылке</p></li>
             </ol>
         </div>
-        <div id="mood" class="clapboard">
-            <h3 class="postcard">Настроение</h3>
+        <div id="mood" class="px-30 py-45 text-sky-700 text-4xl not-italic mt-10">
+            <h3 class="px-40 py-45 text-sky-700 text-4xl not-italic mt-10 font-bold font-serif">Настроение</h3>
         </div>
-        <div class="center">
-            <img class="photo" src="css/img/mood.jpg" alt=""/>
+        <div class="flex justify-center">
+            <img class="rounded-md min-w-min px-1 py-9" src="css/img/mood.jpg" alt=""/>
         </div>
     </main>
-    <footer id='contact' class="case">
-        <div class="flex justify-between flex-row  min-w-full	m-0	px-10 bg-sky-800 bar">
-            <span class="bar__section"> Татьяна Лебедева</span>
+    <footer id='contact' class="flex h-24 bg-sky-800">
+        <div class="flex justify-between flex-row min-w-full	m-0	px-10 bg-sky-800 bar">
+            <span class="text-white text-xl not-Italic font-bold underline-offset-1 stroke-black leading-normal"> Татьяна Лебедева</span>
             <a href="https://vk.com/id18619383" role="button">
                 <svg width="32" height="32" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 14.4C0 7.61 0 4.22 2.1 2.1 4.23 0 7.62 0 14.4 0h1.2c6.79 0 10.18 0 12.3 2.1C30 4.23 30 7.62 30 14.4v1.2c0 6.79 0 10.18-2.1 12.3C25.77 30 22.38 30 15.6 30h-1.2c-6.79 0-10.18 0-12.3-2.1C0 25.77 0 22.38 0 15.6v-1.2Z" fill="#fff"></path>
