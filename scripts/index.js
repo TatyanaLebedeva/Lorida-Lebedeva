@@ -12,7 +12,7 @@ menuActive.addEventListener('click', function() {
 //     menu.classList.toggle('active');
 // })
 
-function calculate(message) {
+function calculate() {
     let number1 = parseFloat(document.getElementById('number1').value);
     let number2 = parseFloat(document.getElementById('number2').value);
     let operation = document.getElementById('operation').value;
