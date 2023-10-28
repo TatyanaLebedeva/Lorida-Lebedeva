@@ -1,7 +1,7 @@
 let menuBtn = document.querySelector('.burger__btn');
 let menu = document.getElementById('menu');
 menuBtn.addEventListener('click', function(){
-    menu.classList.toggle('md:inline-flex md:origin-right md:opacity-100 md:p-0');
+    menu.classList.toggle('md:inline-block md:origin-right md:opacity-100 md:p-0');
 })
 
 let menuActive = document.querySelector('.menu__section');

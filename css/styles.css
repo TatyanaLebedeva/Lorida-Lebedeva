@@ -32,7 +32,7 @@ body {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .burger__btn {
-        display: none;
+        /*display: none;*/
     }
 }
 
