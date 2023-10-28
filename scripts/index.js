@@ -11,3 +11,30 @@ menuActive.addEventListener('click', function() {
 // window.addEventListener('scroll', function() {
 //     menu.classList.toggle('active');
 // })
+
+function openModal() {
+    document.getElementById("result_window").style.display = "flex"
+}
+
+function closeModal() {
+    document.getElementById("result_window").style.display = "none"
+}
+function calculate() {
+    let number1 = parseFloat(document.getElementById('number1').value);
+    let number2 = parseFloat(document.getElementById('number2').value);
+    let operation = document.getElementById('operation').value;
+    let result;
+
+    if (operation === 'addition') {
+        result = number1 + number2;
+    } else if (operation === 'subtraction') {
+        result = number1 - number2;
+    } else if (operation === 'multiplication') {
+        result = number1 * number2;
+    } else if (operation === 'division') {
+        result = number1 / number2;
+    }
+
+    document.getElementById("result").textContent = result;
+    openModal();
+}

@@ -52,25 +52,31 @@
             <div class="postcard">
                 <h3>Калькулятор</h3>
                 <div class="calc">
-                    <label>
+                    <label for="number1">
                         <p>Введите первое число</p>
-                        <input type="text" class="input">
+                        <input type="text" class="input" id="number1">
                     </label>
-                    <label>
+                    <label for="operation">
                         <p>Выберите операцию</p>
-                        <select class="input">
-                            <option>Умножить</option>
-                            <option>Разделить</option>
-                            <option>Сложить</option>
-                            <option>Вычесть</option>
+                        <select class="input" id="operation">
+                            <option value="multiplication">Умножить</option>
+                            <option value="division">Разделить</option>
+                            <option value="addition">Сложить</option>
+                            <option value="subtraction">Вычесть</option>
                         </select>
                     </label>
-                    <label>
+                    <label for="number2">
                         <p>Введите второе число</p>
-                        <input type="text" class="input">
+                        <input type="text" class="input" id="number2">
                     </label>
                 </div>
-                <a href="" class="calc__button" role="button">Вычислить</a>
+<!--                 <a href="" class="calc__button" onclick="calculate()" role="button">Вычислить</a>-->
+                <button onclick="calculate()" class="calc__button">Вычислить</button>
+            </div>
+            <div class="result_window" id="result_window">
+                <p>Результат: </p>
+                <p id="result"></p>
+                <button onclick="closeModal()" class="calc__close">X</button>
             </div>
         </div>
         <div class="activity">
