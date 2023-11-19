@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+<label>
+    <input type="text" placeholder="Введите первое число" name="number1" id="number1">
+</label>
+<br>
+<br>
+<label>
+    <select name="operation" id="operation">
+        <option value="multiplication">Умножить</option>
+        <option value="division">Разделить</option>
+        <option value="addition">Сложить</option>
+        <option value="subtraction">Вычесть</option>
+    </select>
+</label>
+<br>
+<br>
+<label>
+    <input type="text" placeholder="Введите второе число" name="number2" id="number2">
+</label>
+<br>
+<br>
+<div>
+    <button onclick="calc()">Вычислить</button>
+</div>
+<div class="result">
+</div>
+<script src="scripts/index.js"></script>
+</body>
+</html>
